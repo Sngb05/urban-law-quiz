@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>도시개발및법규 퀴즈</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>도시개발및법규 퀴즈</h1>
+          <p id="dataSummary">문제 데이터를 불러오는 중</p>
+        </div>
+        <div class="top-actions">
+          <button id="shuffleBtn" class="ghost-btn" type="button">랜덤</button>
+          <button id="resetBtn" class="danger-btn" type="button">기록 초기화</button>
+        </div>
+      </header>
+
+      <aside class="control-panel" aria-label="퀴즈 필터">
+        <section>
+          <h2>강의</h2>
+          <div id="lectureFilters" class="chip-grid"></div>
+        </section>
+
+        <section>
+          <h2>문제 유형</h2>
+          <div id="typeFilters" class="chip-grid"></div>
+        </section>
+
+        <section>
+          <h2>근거 유형</h2>
+          <div id="evidenceFilters" class="chip-grid"></div>
+        </section>
+
+        <section>
+          <h2>모드</h2>
+          <div class="mode-tabs" role="tablist" aria-label="풀이 모드">
+            <button class="mode-btn active" data-mode="all" type="button">전체</button>
+            <button class="mode-btn" data-mode="unseen" type="button">미풀이</button>
+            <button class="mode-btn" data-mode="wrong" type="button">오답</button>
+            <button class="mode-btn" data-mode="retry" type="button">다시</button>
+            <button class="mode-btn" data-mode="bookmarked" type="button">북마크</button>
+            <button class="mode-btn" data-mode="focus" type="button">어려움</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>학습 요약</h2>
+          <div id="studySummary" class="summary-grid"></div>
+        </section>
+
+        <section>
+          <h2>검색</h2>
+          <input id="searchInput" type="search" placeholder="조문, 개념, 출처 검색" autocomplete="off" />
+        </section>
+
+        <section>
+          <h2>강의별 정답률</h2>
+          <div id="lectureStats" class="stats-list"></div>
+        </section>
+      </aside>
+
+      <main class="quiz-area">
+        <section class="progress-strip">
+          <div>
+            <span id="positionText">0 / 0</span>
+            <strong id="accuracyText">정답률 0%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </section>
+
+        <section id="quizPanel" class="quiz-panel" aria-live="polite">
+          <div class="empty-state">필터에 맞는 문제를 불러오는 중입니다.</div>
+        </section>
+
+        <nav class="quiz-nav" aria-label="문제 이동">
+          <button id="prevBtn" type="button">이전</button>
+          <button id="checkBtn" class="primary-btn" type="button">정답 확인</button>
+          <button id="nextBtn" type="button">다음</button>
+        </nav>
+      </main>
+    </div>
+
+    <script src="questions-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
