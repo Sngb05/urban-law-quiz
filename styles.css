@@ -46,7 +46,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.link-btn:hover {
   border-color: var(--accent);
 }
 
@@ -93,6 +94,20 @@ button:disabled {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .control-panel {
@@ -434,6 +449,10 @@ button:disabled {
 
   .top-actions button {
     flex: 1;
+  }
+
+  .top-actions .link-btn {
+    flex: 1 1 100%;
   }
 
   .control-panel {

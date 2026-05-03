@@ -20,6 +20,8 @@ python -m http.server 8000
 
 GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 
+4강 로드맵: https://sngb05.github.io/urban-law-quiz/lecture4-roadmap.html
+
 ## 포함 기능
 
 - 강의별 필터
@@ -30,6 +32,7 @@ GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 - 미풀이·북마크·어려움 우선 모드
 - 문제별 북마크 저장
 - 학습 요약 카드
+- 4강 용도지역등 로드맵 시각화
 - 정답 확인 및 해설
 - 진행률 표시
 - localStorage 학습 기록 저장
