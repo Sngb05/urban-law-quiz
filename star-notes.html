@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>별표 필기 정리 · 도시개발및법규</title>
+    <link rel="stylesheet" href="star-notes.css" />
+    <script defer src="star-notes-data.js"></script>
+    <script defer src="star-notes.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="top-links" aria-label="페이지 이동">
+        <a href="index.html">퀴즈</a>
+        <a href="lecture4-roadmap.html">4강 로드맵</a>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <p class="eyebrow">1-1강-7강 · 별표 필기 전용</p>
+          <h1>별표 필기 정리</h1>
+          <p class="lead">
+            PDF 위에 표시된 별표, 중요 필기, 별표 후보를 강의별로 모았다. 원문 필기와 설명, 시험 포인트를 함께 보면서 빠르게 회독하는 페이지다.
+          </p>
+        </div>
+        <aside class="hero-card" aria-label="정리 기준">
+          <h2>정리 기준</h2>
+          <ol>
+            <li>별표와 '중요/외울 것' 필기를 우선 반영</li>
+            <li>OCR이 애매한 항목은 검토 표시 유지</li>
+            <li>조문 번호 암기보다 개념·비교·요건 중심 설명</li>
+          </ol>
+        </aside>
+      </header>
+
+      <section class="toolbar" aria-label="필터">
+        <div class="filters">
+          <div class="filter-block">
+            <span>강의</span>
+            <div id="lectureFilters" class="chip-grid"></div>
+          </div>
+          <div class="filter-block">
+            <span>확실도</span>
+            <div id="certaintyFilters" class="chip-grid"></div>
+          </div>
+        </div>
+        <div class="tools">
+          <input id="searchInput" type="search" placeholder="용도지역, 체비지, 도로, 동의요건 검색" autocomplete="off" />
+          <div class="toggles">
+            <label><input id="hideDone" type="checkbox" /> 암기 완료 숨김</label>
+            <label><input id="openAll" type="checkbox" /> 모두 펼침</label>
+          </div>
+        </div>
+      </section>
+
+      <div class="layout">
+        <aside class="side-panel" aria-label="학습 현황">
+          <section id="summary" class="summary-grid"></section>
+          <section id="lectureStats" class="lecture-stats"></section>
+        </aside>
+
+        <section aria-label="별표 필기 목록">
+          <div id="emptyState" class="empty-state" hidden>조건에 맞는 별표 필기가 없습니다.</div>
+          <div id="notesList" class="notes-list"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

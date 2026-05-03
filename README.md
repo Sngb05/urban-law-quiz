@@ -20,10 +20,13 @@ python -m http.server 8000
 
 GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 
+별표 필기 정리: https://sngb05.github.io/urban-law-quiz/star-notes.html
+
 4강 로드맵: https://sngb05.github.io/urban-law-quiz/lecture4-roadmap.html
 
 ## 포함 기능
 
+- 1-1강부터 7강까지 별표·중요 필기 정리 페이지
 - 강의별 필터
 - 문제 유형별 필터
 - 전체 랜덤 풀이
@@ -32,6 +35,7 @@ GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 - 미풀이·북마크·어려움 우선 모드
 - 문제별 북마크 저장
 - 학습 요약 카드
+- 별표 정리 암기 완료 체크 저장
 - 4강 용도지역등 로드맵 시각화
 - 정답 확인 및 해설
 - 진행률 표시
@@ -46,6 +50,19 @@ GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 문제 데이터는 `questions.json`과 `questions-data.js`에 있습니다. 각 문항에는 강의명, PDF 파일명, 페이지 번호, 근거 유형, 정답, 해설, 태그, 난이도, 신뢰도가 포함됩니다.
 
 PDF annotation 객체는 없어서, 추출은 평면화된 색상 텍스트, 도형 색상, PDF 텍스트 레이어, 서브 에이전트 큐레이션 포인트를 조합했습니다.
+
+별표 필기 정리 데이터는 `star-notes-data.js`에 있습니다. 1-1강은 별표 후보가 확인되지 않아 안내 카드만 두었고, 1_2강부터 7강까지 별표·중요 필기 실카드 42개를 강의별로 정리했습니다.
+
+별표 정리 실카드 수:
+
+- 총 42개
+- 1_2강: 3
+- 2강: 5
+- 3강: 7
+- 4강: 6
+- 5강: 9
+- 6강: 5
+- 7강: 7
 
 ## 현재 문제 수
 
