@@ -16,6 +16,10 @@ python -m http.server 8000
 
 `index.html`을 직접 열어도 동작합니다. `questions-data.js`에 문제 데이터를 함께 실어 두었기 때문입니다.
 
+## 배포 링크
+
+GitHub Pages: https://sngb05.github.io/urban-law-quiz/
+
 ## 포함 기능
 
 - 강의별 필터
