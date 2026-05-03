@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>별표 문제 특집 · 도시개발및법규</title>
+    <link rel="stylesheet" href="star-quiz.css" />
+    <script defer src="star-notes-data.js"></script>
+    <script defer src="star-quiz-data.js"></script>
+    <script defer src="star-quiz.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="top-links" aria-label="페이지 이동">
+        <a href="index.html">퀴즈</a>
+        <a href="star-notes.html">별표 정리</a>
+        <a href="lecture4-roadmap.html">4강 로드맵</a>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <p class="eyebrow">교수님 6문제 대비 · 별표 필기 특집</p>
+          <h1>별표 예상문제</h1>
+          <p class="lead">
+            별표 42개를 시험에 나올 만한 6대 축으로 압축하고, 아래에서 모든 별표를 짧은 확인문제로 다시 점검한다.
+          </p>
+        </div>
+        <section id="summary" class="summary-grid" aria-label="학습 현황"></section>
+      </header>
+
+      <section class="toolbar" aria-label="별표 문제 필터">
+        <div class="filter-block">
+          <span>강의별 점검</span>
+          <div id="lectureFilters" class="chip-grid"></div>
+        </div>
+        <div>
+          <input id="searchInput" type="search" placeholder="체비지, 용도지역, 안전진단, 도로 검색" autocomplete="off" />
+          <label class="toggle"><input id="showDone" type="checkbox" checked /> 완료한 문제도 보기</label>
+        </div>
+      </section>
+
+      <section class="section-head">
+        <h2>6대 실전 예상문제</h2>
+        <p>각 문제는 여러 별표 필기를 묶은 종합형이다. 답안 골격을 외워두면 서술·비교·사례형으로 바뀌어도 버틸 수 있다.</p>
+      </section>
+      <section id="predictionGrid" class="prediction-grid" aria-label="6대 실전 예상문제"></section>
+
+      <section class="section-head">
+        <h2>별표 42개 빠른 점검</h2>
+        <p>한 카드당 2문장 답안을 말해보고 정답을 펼친다. 필터로 약한 강의만 골라 돌릴 수 있다.</p>
+      </section>
+      <div id="emptyState" class="empty-state" hidden>조건에 맞는 별표 문제가 없습니다.</div>
+      <section id="drillGrid" class="drill-grid" aria-label="별표 빠른 점검"></section>
+    </main>
+  </body>
+</html>

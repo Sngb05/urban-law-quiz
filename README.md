@@ -22,10 +22,13 @@ GitHub Pages: https://sngb05.github.io/urban-law-quiz/
 
 별표 필기 정리: https://sngb05.github.io/urban-law-quiz/star-notes.html
 
+별표 예상문제: https://sngb05.github.io/urban-law-quiz/star-quiz.html
+
 4강 로드맵: https://sngb05.github.io/urban-law-quiz/lecture4-roadmap.html
 
 ## 포함 기능
 
+- 별표 42개 기반 6대 실전 예상문제 페이지
 - 1-1강부터 7강까지 별표·중요 필기 정리 페이지
 - 강의별 필터
 - 문제 유형별 필터
